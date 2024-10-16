@@ -1,0 +1,95 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Parceria";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>.</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <h1 className="Titulo">Parcerias</h1>
+    <h2 className="txt">Motivos e Vantagens</h2>
+    <img class="Parce" img src="~/img/Parceria.png" alt="" />
+    <div class="Para">
+        <p>Acesso a Produtos Ecológicos: Ao fazer parceria, você pode ter</p>
+        <p>acesso preferencial ou exclusivo aos produtos biodegradáveis e</p>
+        <p> ecológicos oferecidos pela EcoLife, que podem ser integrados à sua</p>
+        <p>linha de produtos ou utilizados em suas operações.</p>
+    </div>
+    <br>
+    <div class="Para2">
+        <p>
+            Responsabilidade Social Corporativa: Associar-se com a EcoLife pode fortalecer sua estratégia de responsabilidade social corporativa (CSR), demonstrando seu compromisso com práticas comerciais éticas e sustentáveis.
+        </p>
+    </div>
+    <h3 class="Entre"> Entre em contato></h3>
+    <h4 class="Numero"> Telefone:(71) 9xxxx-xxxx</h4>
+    <h4 class="Email">Email: ecolife@gmail.com</h4>
+
+    <style>
+
+        .Titulo {
+            font-family: Kodchasan;
+            font-size: 50px;
+            color: #798D3F;
+        }
+
+        .txt {
+            font-family: Kodchasan;
+            font-size: 75px;
+            color: #000000;
+        }
+
+        .Parce {
+            position: relative;
+            width: 650px;
+            height 550px;
+            left: 900px;
+            top: -110px;
+        }
+
+        .Para {
+            text-align: center;
+            position: relative;
+            font-family: Kodchasan;
+            flex-direction: column;
+            font-size: 35px;
+            left: -260px;
+            top: -400px;
+            z-index: 99;
+        }
+
+        .Para2 {
+            text-align: center;
+            position: relative;
+            font-family: Kodchasan;
+            flex-direction: column;
+            font-size: 35px;
+            left: -230px;
+            top: -300px;
+            z-index: 99;
+        }
+
+        .Entre {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .Numero {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .Email {
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+</body>
+</html>

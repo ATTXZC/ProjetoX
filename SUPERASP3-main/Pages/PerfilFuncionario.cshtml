@@ -1,0 +1,29 @@
+@page
+@model Eco_life.Pages.PerfilFuncionarioModel
+@{
+    ViewData["Title"] = "Perfil do Funcionário";
+}
+
+<h2>Perfil do Funcionário</h2>
+
+<div>
+    <h4>Informações do Funcionário</h4>
+    @if (Model.Funcionario != null)
+    {
+        <p><strong>Nome:</strong> @Model.Funcionario.Nome_Funcionario</p>
+        <p><strong>Email:</strong> @Model.Funcionario.Email_Funcionario</p>
+        <p><strong>Cargo:</strong> Logística</p>
+    }
+    else
+    {
+        <p>Funcionário não encontrado.</p>
+    }
+</div>
+
+<form method="post" asp-page-handler="Logout" class="d-inline">
+    <button type="submit" class="btn btn-primary">Sair</button>
+</form>
+
+<form method="post" asp-page-handler="ExcluirConta" onsubmit="return confirm('Você tem certeza que deseja excluir sua conta?');" class="d-inline">
+    <button type="submit" class="btn btn-danger">Excluir Conta</button>
+</form>

@@ -1,0 +1,40 @@
+    @page
+    @model Eco_life.Pages.CadastrarUsuarioModel
+    @{
+        ViewData["Title"] = "Cadastro de Usuário";
+    }
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro de Usuário</title>
+        <link rel="stylesheet" href="/css/site.css" />
+    </head>
+    <body>
+        <h1>Cadastro de Usuário</h1>
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+        }
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+        }
+        <form method="post">
+            <label asp-for="Usuario.Nome_User">Nome:</label>
+            <input asp-for="Usuario.Nome_User" required maxlength="100" /><br />
+
+            <label asp-for="Usuario.Email_User">Email:</label>
+            <input asp-for="Usuario.Email_User" type="email" required maxlength="100" /><br />
+
+            <label asp-for="Usuario.Senha_User">Senha:</label>
+            <input asp-for="Usuario.Senha_User" type="password" required maxlength="100" /><br />
+
+            <label asp-for="Usuario.CPF">CPF:</label>
+            <input asp-for="Usuario.CPF" type="number" required maxlength="11" /><br />
+
+            <button type="submit">Criar conta</button>
+    </form>
+    </body>
+    </html>

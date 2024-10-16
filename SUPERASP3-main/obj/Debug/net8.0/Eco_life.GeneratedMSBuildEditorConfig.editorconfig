@@ -1,0 +1,91 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Eco_life
+build_property.RootNamespace = Eco_life
+build_property.ProjectDir = C:\Users\021.900241\Downloads\SUPERASP3-main\SUPERASP3-main\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\021.900241\Downloads\SUPERASP3-main\SUPERASP3-main
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/CadastrarFornecedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FkYXN0cmFyRm9ybmVjZWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/CadastrarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FkYXN0cmFyVXN1YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/LoginFuncionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5GdW5jaW9uYXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/LoginUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5Vc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/Loja.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9qYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/Pagamento.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnYW1lbnRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/Parceria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFyY2VyaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/Perfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyZmlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/PerfilFuncionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyZmlsRnVuY2lvbmFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/Produtos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/Sobre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29icmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/021.900241/Downloads/SUPERASP3-main/SUPERASP3-main/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qx0p0sgxyx

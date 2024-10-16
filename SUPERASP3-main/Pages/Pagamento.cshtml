@@ -1,0 +1,64 @@
+﻿
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Pagina de produto";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="/css/Paga.css" />
+</head>
+<body>
+
+    <div class="product-container">
+       
+        <div class="product-images">
+            <img class="pro1" img src="~/img/Produto1.png" alt="exemplo" />
+        </div>
+
+        <div class="product-details">
+            <h1>Talheres de bmabu</h1>
+            <div class="product-rating">
+                <span>⭐ 4.5 (15 avaliações)</span>
+
+            </div>
+            <p>
+                Em comparação com talheres de madeira, os de bambu não apresentam uma superfície áspera ou porosa, pelo contrário, o acabamento suave ao toque é uma de suas principais vantagens. Além de serem mais duráveis que estes e aos de plástico, são resistentes ao calor e manchas.
+            </p>
+           
+
+            <p><strong>Cor:</strong> amêndoa</p>
+            <a href="#">política de troca e devolução</a>
+
+            <div class="product-price">
+                <span class="old-price">R$ 18,99</span>
+                <span class="new-price">R$ 15,99</span>
+                <span>no Pix</span>
+                <p>ou R$ 789,46 em até 7x de R$ 112,78</p>
+              
+            </div>
+
+            <div class="freight">
+                <label for="cep">Calcular frete e prazo:</label>
+                <input type="text" id="cep" placeholder="Digite seu CEP">
+                <button type="submit">OK</button>
+            </div>
+
+            
+
+            <button class="btn-comprar">Comprar</button>
+
+            <div class="seller-info">
+                <p>Vendido e entregue por <strong>Eco Life</strong></p>
+                <p>Americanas garante a sua compra, do pedido à entrega. <a href="#">Saiba mais</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

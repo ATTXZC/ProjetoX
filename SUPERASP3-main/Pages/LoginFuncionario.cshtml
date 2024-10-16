@@ -1,0 +1,19 @@
+@page
+@model Eco_life.Pages.LoginFuncionarioModel
+
+<form method="post">
+    <div>
+        <label for="Email_Funcionario">Email:</label>
+        <input type="email" id="Email_Funcionario" name="Email_Funcionario" required />
+    </div>
+    <div>
+        <label for="Senha_Funcionario">Senha:</label>
+        <input type="password" id="Senha_Funcionario" name="Senha_Funcionario" required />
+    </div>
+    <button type="submit">Login</button>
+
+    @if (Model.ErrorMessage != null)
+    {
+        <div style="color:red;">@Model.ErrorMessage</div>
+    }
+</form>

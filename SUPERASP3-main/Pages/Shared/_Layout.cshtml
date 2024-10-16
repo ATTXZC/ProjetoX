@@ -1,0 +1,127 @@
+﻿@using Microsoft.AspNetCore.Http
+@{
+    var userName = Context.Session.GetString("UserName");
+    var funcionarioNome = Context.Session.GetString("FuncionarioNome");
+    var isUserLoggedIn = !string.IsNullOrEmpty(userName); // Verifica se o usuário está logado
+    var isFuncionarioLoggedIn = !string.IsNullOrEmpty(funcionarioNome); // Verifica se o funcionário está logado
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Eco_life</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Eco_life.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar border-bottom box-shadow mb-3">
+            <img class="ecoli" src="~/img/EcoLi.png" alt="exemplo" />
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Loja">Loja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Parceria">Parcerias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Sobre">Sobre nós</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        @if (isUserLoggedIn || isFuncionarioLoggedIn) // Verifica se algum dos dois está logado
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    @if (isUserLoggedIn)
+                                    {
+                                        @userName // Mostra o nome do usuário se estiver logado
+                                    }
+                                    else
+                                    {
+                                        @funcionarioNome // Mostra o nome do funcionário se estiver logado
+                                    }
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                    @if (isUserLoggedIn)
+                                    {
+                                        <li><a class="dropdown-item" asp-page="/Perfil">Meu Perfil</a></li>
+                                    }
+                                    else if (isFuncionarioLoggedIn)
+                                    {
+                                        <li><a class="dropdown-item" asp-page="/PerfilFuncionario">Meu Perfil</a></li>
+                                    }
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="cadastroDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cadastre-se
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="cadastroDropdown">
+                                    <li><a class="dropdown-item" asp-page="/CadastrarUsuario">Como Usuário</a></li>
+                                    <li><a class="dropdown-item" asp-page="/CadastrarFornecedor">Como Fornecedor</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="loginDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Login
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                                    <li><a class="dropdown-item" asp-page="/LoginUsuario">Login Usuário</a></li>
+                                    <li><a class="dropdown-item" asp-page="/LoginFuncionario">Login Funcionário</a></li>
+                                </ul>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        @if (isUserLoggedIn || isFuncionarioLoggedIn)
+        {
+            <div class="alert alert-info text-center" style="animation: fadeIn 0.5s;">
+                Bem-vindo, @(isUserLoggedIn ? userName : funcionarioNome)!
+            </div>
+        }
+
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success text-center" style="animation: fadeIn 0.5s;">
+                @TempData["SuccessMessage"]
+            </div>
+        }
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container-footer">
+            &copy; 2024 - Eco_life - <a asp-area="" asp-page="/Privacy">Privacidade</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

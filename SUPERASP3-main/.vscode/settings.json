@@ -1,0 +1,19 @@
+{
+    "dotnet.defaultSolution": "SuperJest-main.sln",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "sdg",
+            "database": "Eco_lifer",
+            "username": "root",
+            "password": "cimatec"
+        }
+    ]
+}

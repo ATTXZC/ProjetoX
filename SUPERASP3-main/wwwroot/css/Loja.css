@@ -1,0 +1,62 @@
+﻿
+
+section#produtos {
+    padding: 20px 0;
+}
+
+    section#produtos .container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+.produto {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .produto img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .produto h3 {
+        margin: 10px 0;
+    }
+
+.preco {
+    font-size: 1.2em;
+    font-family:Verdana;
+    color: #115423;
+    margin: 10px 0;
+}
+
+button {
+    background: #4aa863;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background: #24783a;
+    }
+
+
+
+.LojE {
+    width: 1390px;
+    height: 530px;
+    left: 400px;
+    padding: 30px;
+}
+

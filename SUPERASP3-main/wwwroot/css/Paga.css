@@ -1,0 +1,182 @@
+﻿/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagens do Produto */
+.product-images {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.image-thumbnails img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .image-thumbnails img:hover {
+        border-color: #555;
+    }
+
+/* Detalhes do Produto */
+.product-details {
+    flex: 1.5;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-rating {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+    .product-rating a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+        .product-rating a:hover {
+            text-decoration: underline;
+        }
+
+.product-details p {
+    margin-bottom: 10px;
+}
+
+.product-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    .product-details a:hover {
+        text-decoration: underline;
+    }
+
+/* Preços */
+.product-price {
+    margin: 20px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+.discount {
+    color: green;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.new-price {
+    font-size: 28px;
+    color: #40b140;
+    display: block;
+    margin-top: 10px;
+}
+
+.product-price p {
+    margin: 5px 0;
+}
+
+.freight {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+    .freight input {
+        padding: 5px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .freight button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .freight button:hover {
+            background-color: #0056b3;
+        }
+
+/* Serviços Extras */
+.extra-service {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+    .extra-service a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        .extra-service a:hover {
+            text-decoration: underline;
+        }
+
+/* Botão Comprar */
+.btn-comprar {
+    background-color: #34a961;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+    .btn-comprar:hover {
+        background-color: #118947;
+    }
+
+/* Informações do Vendedor */
+.seller-info {
+    font-size: 14px;
+    color: #666;
+}
+
+    .seller-info a {
+        color: #007bff;
+        text-decoration: none;
+    }

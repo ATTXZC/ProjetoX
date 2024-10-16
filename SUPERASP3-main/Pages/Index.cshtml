@@ -1,0 +1,213 @@
+﻿@page
+@model Eco_life.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    Layout = "_Layout";
+}
+
+<div class="text-center">
+    <img class="hom" src="~/img/Oce.png" alt="exemplo" />
+</div>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248902.4263433637!2d-38.715571225959344!3d-12.901264493908021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716112050422ebd%3A0xf71c84369573db9d!2sSalvador%2C%20BA!5e0!3m2!1spt-PT!2sbr!4v1726078236020!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<h1>Seja um Voluntário</h1>
+
+<section class="voluntario">
+    <h2>Faça parte da causa</h2>
+    <p>Seja um voluntário</p>
+
+    <div class="voluntario-canais">
+        <div class="canal">
+            <div class="canal-content"></div>
+            <p>Nome do canal de voluntário</p>
+        </div>
+        <div class="canal">
+            <div class="canal-content"></div>
+            <p>Nome do canal de voluntário</p>
+        </div>
+        <div class="canal">
+            <div class="canal-content"></div>
+            <p>Nome do canal de voluntário</p>
+        </div>
+        <div class="canal1">
+            <div class="canal-content"></div>
+            <p>Nome do canal de voluntário</p>
+        </div>
+        <div class="canal2">
+            <div class="canal-content"></div>
+            <p>Nome do canal de voluntário</p>
+        </div>
+        <div class="canal2">
+            <div class="canal-content"></div>
+            <p>Nome do canal de voluntário</p>
+        </div>
+    </div>
+</section>
+
+<section class="descarte">
+    <h2>Locais para descarte correto</h2>
+
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d175964.03616758523!2d-38.490917581407295!3d-12.953119257635704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdescartes%20de%20res%C3%ADduos%20biodegradaveis!5e0!3m2!1spt-BR!2sbr!4v1727288151207!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+    </div>
+
+    <div class="tipos-descarte">
+         <img class="lixo" img src="~/img/tipolixo.png" alt="Tipos de descarte"/>
+         <h3>Tipos de Descarte</h3>
+    </div>
+</section>
+
+
+<style>
+   h2 {
+    color: #5C755E;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p {
+    color: #A9B49A;
+    font-size: 18px;
+}
+
+.voluntario {
+    background-color: #D6E8D2;
+    padding: 20px;
+    text-align: center;
+}
+
+.voluntario-canais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.canal {
+    position:relative;
+    background-color: #E1F4DF;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    left:100px;
+
+}
+.canal1 {
+    position:relative;
+    background-color: #E1F4DF;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    top:195px;
+    right:170px;
+
+}
+.canal2 {
+    position:relative;
+    background-color: #E1F4DF;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    right:170px;
+}
+
+.canal-content {
+    background-color: #DFF4DC;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size:40px;
+}
+
+.descarte {
+    background-color: #E1F4DF;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mapa {
+    margin: 20px 0;
+}
+
+.tipos-descarte {
+    position:relative;
+    margin-top: 20px;
+    font-size:25px;
+    font-family:Kodchasan;
+    color:#4e6137;
+    top:10px;
+}
+
+.tipos-descarte img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.tabela-oculta {
+        display: none; /* Oculta a tabela */
+    }
+
+ (max-width: 768px) {
+    .voluntario-canais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tipos-descarte img {
+        width: 100%;
+    }
+
+}
+</style>
+
+<table class="tabela-oculta">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>CPF</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cadastro in Model.Cadastros1)
+        {
+            <tr>
+                <td>@cadastro.ID_User</td>
+                <td>@cadastro.Nome_User</td>
+                <td>@cadastro.Email_User</td>
+                <td>@cadastro.CPF</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<table class="tabela-oculta">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome do Produto</th>
+            <th>Preço</th>
+            <th>Estoque</th>
+            <th>Categoria</th>
+            <th>Descrição</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var produto in Model.Produtos1)
+        {
+            <tr>
+                <td>@produto.ID_Produtos</td>
+                <td>@produto.Nome_Produto</td>
+                <td>@produto.preco_produto</td>
+                <td>@produto.Estoque</td>
+                <td>@produto.Categoria</td>
+                <td>@produto.descricao</td>
+            </tr>
+        }
+    </tbody>
+</table>

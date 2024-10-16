@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Eco_life.props" />
+</Project>
